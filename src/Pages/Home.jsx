@@ -7,11 +7,11 @@ import 'aos/dist/aos.css'
 // Memoized Components
 const StatusBadge = memo(() => (
   <div className="inline-block animate-float lg:mx-0" data-aos="zoom-in" data-aos-delay="400">
-    <div className="relative group">
+    <div className="relative group invisible lg:visible">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
       <div className="relative px-3 sm:px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
-        <span className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
-          <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-blue-400" />
+        <span className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center ">
+          <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2  text-blue-400" />
           Ready to Innovate
         </span>
       </div>
@@ -78,7 +78,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["A Video Editor", "A Full-Stack Developer"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind" , "Next"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/RakibStackDev" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/muhammad-rakib-52b23a2a4/" },
@@ -183,7 +183,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                  Rakib turns ideas into fast, responsive, and scalable web applications.
+                  I will turn ideas into fast, responsive, and scalable web applications, delivering intuitive user interfaces, accessible designs, and seamless performance.
                 </p>
 
                 {/* Tech Stack */}

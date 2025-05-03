@@ -214,9 +214,9 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              A Full-Stack Developer passionate about Front-End development,
-               focused on creating engaging digital experiences and always striving 
-               to deliver the best solutions in every project
+              I’m a full-stack developer in Bangladesh who loves front-end work. I turn ideas into fast,
+               clear web pages that anyone can use. I focus on making sites load quickly and look great on any device.
+               I always aim for the simplest, most effective solution in every project.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
