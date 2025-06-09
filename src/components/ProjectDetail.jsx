@@ -83,7 +83,7 @@ const handleGithubClick = (githubLink) => {
     Swal.fire({
       icon: 'info',
       title: 'Source Code Private',
-      text: 'Maaf, source code untuk proyek ini bersifat privat.',
+      text: 'Sorry, The code is Private and Cannot be Shared.',
       confirmButtonText: 'Mengerti',
       confirmButtonColor: '#3085d6',
       background: '#030014',
