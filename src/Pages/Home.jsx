@@ -181,6 +181,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
+                    
                   I will turn ideas into fast, responsive, and scalable web applications, delivering intuitive user interfaces, accessible designs, and seamless performance.
                 </p>
 

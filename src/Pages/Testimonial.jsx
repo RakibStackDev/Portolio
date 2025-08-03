@@ -106,8 +106,14 @@ const Testimonial = () => {
       </div>
       <div className="slider-container w-full p-0 ">
        <Slider {...settings}>
-    <Reviews/>
-    <Reviews/>
+    <Reviews  title="Outstanding Experience!"
+     description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+      name="Ameerah"
+       role="Senior Developer"/>
+    <Reviews title="Amazing Work!"
+     description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+      name="Asif"
+       role="Business Owner"/>
     <Reviews/>
     <Reviews/>
     <Reviews/>
