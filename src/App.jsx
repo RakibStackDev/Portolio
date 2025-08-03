@@ -12,10 +12,10 @@ import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from 'framer-motion';
 import Testimonial from "./Pages/Testimonial";
 
+
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
     <>
-    
       <AnimatePresence mode="wait">
         {showWelcome && (
           <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />
@@ -24,14 +24,15 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
 
       {!showWelcome && (
         <>
+        
           <Navbar />
           <AnimatedBackground />
           <Home />
           <About />
           <Portofolio />
-          <ContactPage />
-
           <Testimonial />
+          <ContactPage />
+          
           
           <footer>
             <center>
@@ -45,7 +46,9 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
               </span>
             </center>
           </footer>
+         
         </>
+        
       )}
     </>
   );

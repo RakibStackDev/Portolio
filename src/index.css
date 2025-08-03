@@ -24,7 +24,9 @@ body {
 	overflow-x: hidden;
 	background: #030014;
 	scroll-behavior: smooth !important;
+	
 }
+
 
 @keyframes blob {
 	0%,

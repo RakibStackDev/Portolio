@@ -11,6 +11,7 @@ const Navbar = () => {
         { href: "#About", label: "About" },
         { href: "#Portofolio", label: "Portofolio" },
         { href: "#Contact", label: "Contact" },
+        { href: "#Testimonial", label: "Testimonial" },
     ];
 
     useEffect(() => {

@@ -77,7 +77,7 @@ const Testimonial = () => {
   return (
     <>
 
-      <div className="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%] py-[3%]">
+      <div id="Testimonial" className="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%] py-[3%]">
         <h2
           data-aos="fade-down"
           data-aos-duration="1000"
