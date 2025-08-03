@@ -12,6 +12,12 @@
 	scrollbar-width: thin;
 	scrollbar-color: rgba(99, 102, 241, 0.3) rgba(12, 5, 53, 0.356);
 }
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+   padding: 0 !important;
+  margin: 0 !important;
+}
 
 html,
 body {
