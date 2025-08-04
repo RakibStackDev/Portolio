@@ -20,7 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Testimonial = () => {
     
     const settings = {
-    dots: true,
+   
     infinite: true,
     centerMode: true,
     speed: 500,
@@ -36,7 +36,7 @@ const Testimonial = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          
            // Adjust the padding as needed
         }
       },
@@ -46,7 +46,7 @@ const Testimonial = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+         
         }
       },
       {
