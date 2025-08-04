@@ -4,11 +4,11 @@ import "aos/dist/aos.css";
 const Reviews = ({ title, description, name, role }) => {
   return (
     <div
-      className="group relative w-[380px]"
+      className="group relative w-full max-w-[360px]"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
-      <div className="relative overflow-hidden rounded-2xl bg-slate-950 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/10">
+      <div className="relative overflow-hidden rounded-2xlbg-white/5 backdrop-blur-xl rounded-3xl  shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/10">
         <div className="absolute -left-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70" />
         <div className="absolute -right-16 -bottom-16 h-32 w-32 rounded-full bg-gradient-to-br from-purple-500/20 to-indigo-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70" />
         <div className="relative p-6">

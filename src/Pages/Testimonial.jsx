@@ -19,60 +19,37 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial = () => {
     
-    const settings = {
-   
-    infinite: true,
-    centerMode: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    
-
-      responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          
-           // Adjust the padding as needed
-        }
+ const settings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4, // Default for large screens
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200, // below 1200px
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
       },
-      {
-        breakpoint: 820,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-         
-        }
+    },
+    {
+      breakpoint: 900, // below 900px
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
+    },
+    {
+      breakpoint: 600, // below 600px
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "20px",
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centermode: true,
-          centerPadding: "10px", 
-          
-
-        }
-        
-        
-      }
-      
-    ]
-  };
+    },
+  ],
+};
 
   return (
     <>
