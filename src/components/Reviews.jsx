@@ -4,11 +4,11 @@ import "aos/dist/aos.css";
 const Reviews = ({ title, description, name, role }) => {
   return (
     <div
-      className="group relative w-full max-w-[360px]"
+      className="group relative w-full max-w-[400px] md:max-w-[350px] sm:max-w-[320px]"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
-      <div className="relative overflow-hidden rounded-2xlbg-white/5 backdrop-blur-xl rounded-3xl  shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/10">
+      <div className="relative overflow-hidden  bg-white/5 backdrop-blur-xl rounded-3xl  shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/10">
         <div className="absolute -left-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70" />
         <div className="absolute -right-16 -bottom-16 h-32 w-32 rounded-full bg-gradient-to-br from-purple-500/20 to-indigo-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70" />
         <div className="relative p-6">
@@ -86,65 +86,7 @@ const Reviews = ({ title, description, name, role }) => {
               </div>
             </div>
           </div>
-          <div className="mt-6 grid grid-cols-3 gap-4">
-            <div className="rounded-xl bg-slate-900/50 p-4">
-              <div className="flex items-center gap-2">
-                <svg
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5 text-indigo-500"
-                >
-                  <path
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                    strokeWidth={2}
-                    strokeLinejoin="round"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="text-sm font-medium text-white">12</span>
-              </div>
-              <p className="mt-1 text-xs text-slate-400">Purchases</p>
-            </div>
-            <div className="rounded-xl bg-slate-900/50 p-4">
-              <div className="flex items-center gap-2">
-                <svg
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5 text-indigo-500"
-                >
-                  <path
-                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                    strokeWidth={2}
-                    strokeLinejoin="round"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="text-sm font-medium text-white">8</span>
-              </div>
-              <p className="mt-1 text-xs text-slate-400">Reviews</p>
-            </div>
-            <div className="rounded-xl bg-slate-900/50 p-4">
-              <div className="flex items-center gap-2">
-                <svg
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5 text-indigo-500"
-                >
-                  <path
-                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-                    strokeWidth={2}
-                    strokeLinejoin="round"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="text-sm font-medium text-white">45</span>
-              </div>
-              <p className="mt-1 text-xs text-slate-400">Helpful</p>
-            </div>
-          </div>
+          
           <div className="mt-6 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <button className="rounded-lg bg-slate-900 p-2 text-slate-400 transition-colors hover:text-white">

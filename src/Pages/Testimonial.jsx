@@ -12,49 +12,53 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-
-
-
-
-
 const Testimonial = () => {
-    
- const settings = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4, // Default for large screens
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1200, // below 1200px
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+  const settings = {
+    infinite: true,
+    slidesToShow: 5, // Default for large screens
+    slidesToScroll: 1,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 0, // must be 0 for smooth linear
+    cssEase: "linear", // makes it constant speed
+
+    speed: 8000, // 8 seconds for full slide
+
+    responsive: [
+      {
+        breakpoint: 1200, // below 1200px
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "10px",
+        },
       },
-    },
-    {
-      breakpoint: 900, // below 900px
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+      {
+        breakpoint: 900, // below 900px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 600, // below 600px
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: "20px",
+      {
+        breakpoint: 600, // below 600px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20px",
+        },
       },
-    },
-  ],
-};
+    ],
+  };
 
   return (
     <>
-
-      <div id="Testimonial" className="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%] py-[3%]">
+      <div
+        id="Testimonial"
+        className="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%] py-[3%]"
+      >
         <h2
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -82,26 +86,47 @@ const Testimonial = () => {
         </p>
       </div>
       <div className="slider-container w-full p-0 ">
-       <Slider {...settings}>
-    <Reviews  title="Outstanding Experience!"
-     description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-      name="Ameerah"
-       role="Senior Developer"/>
-    <Reviews title="Amazing Work!"
-     description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-      name="Asif"
-       role="Business Owner"/>
-    <Reviews/>
-    <Reviews/>
-    <Reviews/>
-    <Reviews/>
-    </Slider>
-  
-     
+        <Slider {...settings}>
+          <Reviews
+            title="Outstanding Experience!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Ameerah"
+            role="Senior Developer"
+          />
+          <Reviews
+            title="Amazing Work!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Asif"
+            role="Business Owner"
+          />
+          <Reviews
+            title="Outstanding Experience!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Ameerah"
+            role="Senior Developer"
+          />
+          <Reviews
+            title="Outstanding Experience!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Ameerah"
+            role="Senior Developer"
+          />
+          <Reviews
+            title="Outstanding Experience!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Ameerah"
+            role="Senior Developer"
+          />
+          <Reviews
+            title="Outstanding Experience!"
+            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
+            name="Ameerah"
+            role="Senior Developer"
+          />
+        </Slider>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;

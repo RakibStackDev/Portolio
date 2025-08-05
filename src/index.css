@@ -27,6 +27,18 @@ body {
 	
 }
 
+.slick-slide {
+  padding: 0 12px !important; /* force padding even if width is inline */
+  box-sizing: border-box;     /* so padding does not break the layout */
+}
+
+.slick-slide > div {
+  height: 100%;                /* so card takes full height */
+}
+
+.slick-list {
+  margin: 0 -12px;             /* balance the padding */
+}
 
 @keyframes blob {
 	0%,
