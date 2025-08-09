@@ -11,9 +11,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Testimonial = () => {
   const settings = {
+    arrows: false,
+    dots: false,
     infinite: true,
     slidesToShow: 5, // Default for large screens
     slidesToScroll: 1,
@@ -88,10 +89,10 @@ const Testimonial = () => {
       <div className="slider-container w-full p-0 ">
         <Slider {...settings}>
           <Reviews
-            title="Outstanding Experience!"
-            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-            name="Ameerah"
-            role="Senior Developer"
+            title="Fantastic Experience!"
+            description="Everything was delivered exactly as promised, with great attention to detail. I appreciate the dedication and effort put into ensuring everything was perfect."
+            name="Hannah Scott"
+            role="Marketing Specialist"
           />
           <Reviews
             title="Amazing Work!"
@@ -100,22 +101,22 @@ const Testimonial = () => {
             role="Business Owner"
           />
           <Reviews
-            title="Outstanding Experience!"
-            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-            name="Ameerah"
-            role="Senior Developer"
+            title="Above and Beyond!"
+            description="Not only did they meet my requirements, but they also offered suggestions that made the project even better. Truly a pleasure to work with."
+            name="Michael Patel"
+            role="Entrepreneur"
           />
           <Reviews
-            title="Outstanding Experience!"
-            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-            name="Ameerah"
-            role="Senior Developer"
+            title="Highly Recommended!"
+            description="The professionalism and skill were evident in every step of the project. Deadlines were met without compromising on quality, and the final product was flawless."
+            name="Sophia Lee"
+            role="UI/UX Designer"
           />
           <Reviews
-            title="Outstanding Experience!"
-            description="The attention to detail and premium quality exceeded my expectations. The customer service was exceptional, and the product arrived earlier than expected. I'm thoroughly impressed with every aspect of my purchase."
-            name="Ameerah"
-            role="Senior Developer"
+            title="Exceptional Service!"
+            description="From start to finish, the entire process was smooth and stress-free. The communication was prompt, and the quality delivered far exceeded what I had imagined."
+            name="David Khan"
+            role="Project Manager"
           />
           <Reviews
             title="Outstanding Experience!"
